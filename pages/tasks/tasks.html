@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Сервис по нахождению исполнителей для оказания коммерческих услуг">
+    <meta name="author" content="WeCanDo">
+    <title>Сервис по нахождению исполнителей для оказания коммерческих услуг</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-pro/css/all.min.css">
+    <!-- Purpose CSS -->
+    <link rel="stylesheet" href="../../assets/css/purpose.css" id="stylesheet">
+</head>
+
+<body>
+    <header class="header header-transparent" id="header-main">
+        <!-- Topbar -->
+        <div id="navbar-top-main" class="navbar-top  navbar-dark bg-dark border-bottom">
+            <div class="container px-0">
+                <div class="navbar-nav align-items-center">
+                    <div class="d-none d-lg-inline-block">
+                        <span class="navbar-text mr-3">Сервис по нахождению исполнителей для оказания коммерческих услуг </span>
+                    </div>
+
+                    <div class="ml-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/utility/support.html">Поддержка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-action="omnisearch-open" data-target="#omnisearch"><i
+                   class="far fa-search"></i></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-user-circle"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                    <h6 class="dropdown-header">Меню пользователя</h6>
+                                    <a class="dropdown-item" href="../account/account-profile-public.html">
+                                        <i class="far fa-user"></i>Аккаунт
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="float-right badge badge-primary">4</span>
+                                        <i class="far fa-envelope"></i>Почта
+                                    </a>
+                                    <a class="dropdown-item" href="../account/account-settings.html">
+                                        <i class="far fa-cog"></i>Настройки
+                                    </a>
+                                    <div class="dropdown-divider" role="presentation"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="far fa-sign-out-alt"></i>Выход
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" id="navbar-main">
+            <div class="container px-lg-0">
+                <!-- Logo -->
+                <a class="navbar-brand mr-lg-5" href="../../index.html">
+                    <img alt="Image placeholder" src="../../assets/img/brand/favicon.png" id="navbar-logo" style="height: 50px;">
+                </a>
+                <!-- Navbar collapse trigger -->
+                <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+                <!-- Navbar nav -->
+                <div class="collapse navbar-collapse" id="navbar-main-collapse">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <!-- Home - Overview  -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html">Главная</a>
+                        </li>
+                        <!-- Pages menu -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../cart/cart-maker.html">Создать задание</a>
+                        </li>
+                        <!-- Sections menu -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Все задания</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="worker.html">Исполнители</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/pages/support/faq.html">Помощь</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../authentication/basic-login.html">Войти</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Omnisearch -->
+    <div id="omnisearch" class="omnisearch">
+        <div class="container">
+            <!-- Search form -->
+            <form class="omnisearch-form">
+                <div class="form-group">
+                    <div class="input-group input-group-merge input-group-flush">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="far fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Напиши слово и нажми enter ...">
+                    </div>
+                </div>
+            </form>
+            <div class="omnisearch-suggestions">
+                <h6 class="heading">Поиск исполнителя</h6>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a class="list-link" href="#">
+                                    <i class="far fa-search"></i>
+                                    <span>Фотограф</span> в фото услугах
+                                </a>
+                            </li>
+                            <li>
+                                <a class="list-link" href="#">
+                                    <i class="far fa-search"></i>
+                                    <span>Авто слесарь</span> в ремонте транспорта
+                                </a>
+                            </li>
+                            <li>
+                                <a class="list-link" href="#">
+                                    <i class="far fa-search"></i>
+                                    <span>Электрик</span> в бытовом ремонте
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <!-- Header (account) -->
+        <section class="header-account-page bg-primary d-flex align-items-end" data-offset-top="#header-main">
+            <!-- Header container -->
+            <div class="container pt-4 pt-lg-0">
+                <div class="row">
+                    <div class=" col-lg-12">
+                        <!-- Salute + Small stats -->
+                        <div class="row align-items-center mb-4">
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <span class="h2 mb-0 text-white d-block">Задания</span>
+                                <span class="text-white">Выберите любое задание</span>
+                            </div>
+
+                        </div>
+                        <!-- Account navigation -->
+                        <div class="d-flex">
+
+                            <div class="btn-group btn-group-nav shadow ml-auto" role="group" aria-label="Basic example">
+                                <div class="btn-group" role="group">
+                                    <button id="btn-group-settings" type="button" class="btn btn-neutral btn-icon" data-toggle="dropdown" data-offset="0,8" aria-haspopup="true" aria-expanded="false">
+                    <span class="btn-inner--icon"><i class="far fa-sort"></i></span>
+                    <span class="btn-inner--text d-none d-sm-inline-block">Сортировка</span>
+                  </button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" aria-labelledby="btn-group-settings">
+
+                                        <a class="dropdown-item" href="#">По рейтингу</a>
+
+                                        <a class="dropdown-item" href="#">По выполненным заданиям</a>
+                                        <a class="dropdown-item" href="#">По положительным отзывам</a>
+
+
+                                    </div>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button id="btn-group-boards" type="button" class="btn btn-neutral btn-icon" data-toggle="dropdown" data-offset="0,8" aria-haspopup="true" aria-expanded="false">
+                    
+                                        <span class="btn-inner--icon"><i class="far fa-globe"></i></span>
+                    <span class="btn-inner--text d-none d-sm-inline-block">Ваш город: Самара</span>
+                    
+                  </button>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slice">
+            <div class="container">
+                <div class="row row-grid">
+                    <div class="col-lg-3 order-lg-1">
+                        <div data-toggle="sticky" data-sticky-offset="30" data-negative-margin=".card-profile-cover">
+                            <div class="card">
+                                <div class="card-header py-3">
+                                    <span class="h6">Меню</span>
+                                </div>
+                                <div class="list-group list-group-sm list-group-flush">
+                                    <a href=# " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-gift mr-2 "></i>
+                                            <span>Мероприятия</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">222</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-truck mr-2 "></i>
+                                            <span>Грузоперевозки</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">13</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-wrench mr-2 "></i>
+                                            <span>Бытовой ремонт</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">53</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-home mr-2 "></i>
+                                            <span>Уборка в доме</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">35</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-car mr-2 "></i>
+                                            <span>Ремонт транспорта</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">18</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-camera-retro mr-2 "></i>
+                                            <span>Фото и видео услуги</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">63</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-book mr-2 "></i>
+                                            <span>Репетиторство</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">32</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-laptop mr-2 "></i>
+                                            <span>Ремонт техники</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">66</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-gavel mr-2 "></i>
+                                            <span>Юридическая помощь</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">31</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-desktop mr-2 "></i>
+                                            <span>Компьютерная помощь</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">21</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-bicycle mr-2 "></i>
+                                            <span>Курьерские услуги</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">54</span>
+                                        </div>
+                                    </a>
+                                    <a href=" # " class=" list-group-item list-group-item-action d-flex justify-content-between ">
+                                        <div>
+                                            <i class=" far fa-code mr-2 "></i>
+                                            <span>Web-разработка</span>
+                                        </div>
+                                        <div>
+                                            <span class=" badge badge-success badge-pill ">24</span>
+                                        </div>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 order-lg-2 ">
+                        
+                          <div class="card ">
+                                <div class="card-header ">
+                                    <div class="row align-items-center ">
+                                       <div class="col-1 ">
+<div class="icon bg-gradient-warning text-white rounded-circle icon-shape hover-rotate-360 ">
+    <i class="far fa-user "></i>
+</div>
+
+                                       </div>
+                                       
+                                       
+                                        <div class="col-7 ">
+
+
+
+                                            <h5 class="card-title mb-0 ">Виртуальный помощник</h5>
+                                             <span class="text-muted text-sm ">3 часа назад</span>
+                                        </div>
+                                        <div class="col-4 ">
+                                             
+                                            <div class="actions text-right ">
+                                                <p class="card-text ">5000р</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              <div class="card-body ">
+
+                                <div class="row align-items-center ">
+
+                                <div class="col-8 ">
+                                  <p class="card-text ">Можно выполнить удаленно</p>
+                                  <span class="text-muted "><i class="far fa-calendar mr-2 "></i>5 апреля &nbsp; </span>
+                                   <span class="text-muted "><i class="far fa-clock mr-2 "></i>10:30 AM</span> 
+                         
+                                        </div>  
+
+                                        <div class="col-4 ">
+
+                                        <div class="actions text-right ">
+                                    <a href="# " class="btn btn-sm btn-success ">Выполнить</a>
+ 
+                                    </div>
+                                    </div>
+                                    </div>
+                              </div>
+                              <div class="card-footer ">
+                                  <div class="row align-items-center ">
+                                      <div class="col ">
+                                          <span class="avatar avatar-sm bg-info rounded-circle ">АИ</span>
+                                          <span class="h6 mb-0 avatar-content ">Артём Игнатьев</span>
+                                      </div>
+                                      <div class="col text-right text-right ">
+                                          <div class="actions ">
+                                              <a href="# " class="action-item "><i class="far fa-heart mr-1 "></i> 50</a>
+                                              <a href="# " class="action-item "><i class="far fa-eye mr-1 "></i> 250</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+    <div class="card ">
+        <div class="card-header ">
+            <div class="row align-items-center ">
+
+                 <div class="col-1 ">
+                     <div class="icon bg-gradient-danger text-white rounded-circle icon-shape hover-rotate-360 ">
+                         <i class="far fa-book "></i>
+                     </div>
+
+                 </div>
+                <div class="col-7 ">
+                    <h5 class="card-title mb-0 ">Перевести текст с английского</h5>
+                    <span class="text-muted text-sm ">2 часа назад</span>
+                </div>
+                <div class="col-4 ">
+
+                    <div class="actions text-right ">
+                        <p class="card-text ">1000р</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body ">
+
+            <div class="row align-items-center ">
+
+                <div class="col-8 ">
+                    <p class="card-text ">Можно выполнить удаленно</p>
+                    <span class="text-muted "><i class="far fa-calendar mr-2 "></i>6 апреля &nbsp; </span>
+                    <span class="text-muted "><i class="far fa-clock mr-2 "></i>12:30 AM</span>
+
+                </div>
+
+                <div class="col-4 ">
+
+                    <div class="actions text-right ">
+                        <a href="# " class="btn btn-sm btn-success ">Выполнить</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer ">
+            <div class="row align-items-center ">
+                <div class="col ">
+                    <span class="avatar avatar-sm bg-info rounded-circle ">ИИ</span>
+                    <span class="h6 mb-0 avatar-content ">Иван Иванов</span>
+                </div>
+                <div class="col text-right text-right ">
+                    <div class="actions ">
+                        <a href="# " class="action-item "><i class="far fa-heart mr-1 "></i> 50</a>
+                        <a href="# " class="action-item "><i class="far fa-eye mr-1 "></i> 250</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="card ">
+            <div class="card-header ">
+                <div class="row align-items-center ">
+
+<div class="col-1 ">
+    <div class="icon bg-gradient-dark text-white rounded-circle icon-shape hover-rotate-360 ">
+        <i class="far fa-bicycle "></i>
+    </div>
+
+</div>
+
+                    <div class="col-7 ">
+                        <h5 class="card-title mb-0 ">Купить продукты</h5>
+                        <span class="text-muted text-sm ">1 час назад</span>
+                    </div>
+                    <div class="col-4 ">
+
+                        <div class="actions text-right ">
+                            <p class="card-text ">200р</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body ">
+
+                <div class="row align-items-center ">
+
+                    <div class="col-8 ">
+                        <p class="card-text ">Купить продукты по списку из магазина</p>
+                        <span class="text-muted "><i class="far fa-calendar mr-2 "></i>5 апреля &nbsp; </span>
+                        <span class="text-muted "><i class="far fa-clock mr-2 "></i>13:30 AM</span>
+
+                    </div>
+
+                    <div class="col-4 ">
+
+                        <div class="actions text-right ">
+                            <a href="# " class="btn btn-sm btn-success ">Выполнить</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer ">
+                <div class="row align-items-center ">
+                    <div class="col ">
+                        <span class="avatar avatar-sm bg-info rounded-circle ">ИВ</span>
+                        <span class="h6 mb-0 avatar-content ">Ирина Васина</span>
+                    </div>
+                    <div class="col text-right text-right ">
+                        <div class="actions ">
+                            <a href="# " class="action-item "><i class="far fa-heart mr-1 "></i> 50</a>
+                            <a href="# " class="action-item "><i class="far fa-eye mr-1 "></i> 250</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        
+
+
+                        <nav aria-label="Page navigation example ">
+                            <ul class="pagination justify-content-center ">
+                                <li class="page-item disabled ">
+                                    <a class="page-link " href="# " tabindex="-1 " aria-disabled="true ">Назад</a>
+                                </li>
+                                <li class="page-item "><a class="page-link " href="# ">1</a></li>
+                                <li class="page-item "><a class="page-link " href="# ">2</a></li>
+                                <li class="page-item "><a class="page-link " href="# ">3</a></li>
+                           
+                                <li class="page-item ">
+                                    <a class="page-link " href="# ">Следующая</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer p-0 footer-light bg-section-secondary " id="footer-main ">
+        <div class="container ">
+            <div class="py-4 ">
+                <div class="row align-items-md-center ">
+                    <div class="col-md-4 mb-4 mb-md-0 ">
+                        <div class="d-flex align-items-center ">
+                            <p class="text-sm mb-0 ">© 2019-2020 WeCanDo. Все права защищены</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4 mb-sm-0 ">
+                        <ul class="nav justify-content-center ">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="../../pages/utility/support.html ">Поддержка</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link " href="../../pages/utility/privacy.html ">Конфиденциальность</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 ">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0 ">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# " target="_blank ">
+                                    <i class="fab fa-dribbble "></i>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# " target="_blank ">
+                                    <i class="fab fa-instagram "></i>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# " target="_blank ">
+                                    <i class="fab fa-github "></i>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# " target="_blank ">
+                                    <i class="fab fa-facebook "></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+    <script src="../../assets/js/purpose.core.js "></script>
+    <!-- Purpose JS -->
+    <script src="../../assets/js/purpose.js "></script>
+    <!-- Demo JS - remove it when starting your project -->
+    <script src="../../assets/js/demo.js "></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104437451-1 "></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104437451-1');
+    </script>
+</body>
+
+</html>
