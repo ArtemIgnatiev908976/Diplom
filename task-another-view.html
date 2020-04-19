@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta character set -->
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WeCanDO</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Blue One Page Creative HTML5 Template">
+    <meta name="keywords"
+          content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="author" content="Muhammad Morshed">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/slit-slider.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Календарь -->
+    <link rel="stylesheet" type="text/css" href="tcal.css"/>
+    <script type="text/javascript" src="tcal.js"></script>
+    <link id="header-import" rel="import" href="header.html">
+    <link rel="stylesheet" href="node_modules/pikaday/css/pikaday.css">
+    <!-- Календарь -->
+</head>
+<body>
+<!-- preloader -->
+<div id="preloader">
+    <div class="loder-box">
+        <div class="battery"></div>
+    </div>
+</div>
+<!-- end preloader -->
+<!--
+Fixed Navigation
+==================================== -->
+
+<header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Навигация</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+
+            <!-- logo -->
+            <h1 class="navbar-brand">
+                <a href="#body">WeCanDO</a>
+            </h1>
+            <!-- /logo -->
+        </div>
+        <script type="text/javascript">
+            function goToAllTasks() {
+                window.location = getAllTasksUrl();
+            }
+
+            function goToAllMakers() {
+                window.location = getExecutorsUrl();
+            }
+
+            function goHome() {
+                window.location = getMainPageUrl();
+            }
+
+            function checkAndCreate() {
+                console.log("create task");
+                let cookie = getCookie("session-id");
+                if (typeof cookie === "undefined") {
+                    alert("Вы не авторизованы");
+                    throw new Error("Client is not authorized");
+                } else {
+                    window.location = getCreateTaskUrl();
+                }
+            }
+        </script>
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <ul id="nav" class="nav navbar-nav">
+                <li><a onclick="goHome()" href="#body">Главная</a></li>
+                <li><a onclick="checkAndCreate()" href="">Создать задание</a></li>
+                <li><a onclick="goToAllTasks()" href="allTasks.html">Все задания</a></li>
+                <li><a onclick="goToAllMakers()" href="executors.html">Исполнители</a></li>
+            </ul>
+        </nav>
+        <!-- /main nav -->
+
+    </div>
+</header>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/frontMain.js"></script>
+<!-- Twitter Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Single Page Nav -->
+<script src="js/jquery.singlePageNav.min.js"></script>
+<!-- jquery.fancybox.pack -->
+<script src="js/jquery.fancybox.pack.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- jquery easing -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Fullscreen slider -->
+<script src="js/jquery.slitslider.js"></script>
+<script src="js/jquery.ba-cond.min.js"></script>
+<!-- onscroll animation -->
+<script src="js/wow.min.js"></script>
+<!-- Custom Functions -->
+<script src="js/main.js"></script>
+<!-- Price section -->
+<section id="price">
+    <div class="container">
+        <div class="row">
+            <br><br><br><br><br><br>
+            <div class="sec-title text-center wow animated fadeInDown">
+                <h2>Просмотр Задания</h2>
+            </div>
+            <p><b>Что нужно сделать (кратко)?</b></p>
+            <input disabled required id="task-description" type="text" class="form-control"
+                   placeholder="Кратко опишите своё задание"
+                   autofocus="" style="width: 50%" value=""> <br>
+            <p><b>Выберите подходящую категорию</b></p>
+            <select disabled required name="" id="category-select" class="form-control" style="width: 35%">
+                <option>Любая</option>
+                <option>Уборка</option>
+                <option>Web разработка</option>
+                <option>Услуги мастера</option>
+            </select><br>
+            <p><b>Подробно опишите ваше задание</b></p>
+            <textarea disabled required id="task-description-full" class="form-control" rows="10" cols="20" name="text"
+                      style="width: 55%"
+                      placeholder="Например-требуется двое грузчиков для выноса пианино с 9 этажа по леснице без лифта."></textarea>
+            <br>
+            <!--<p><b>Наличие фото помогает исполнителям лучше оценить вашу задачу и сформулировать свое предложение. </b></p><br>-->
+            <!--<a href="#" class="btn-blue" alignt="left" style="width: 20%">Загрузить фотографию</a><br><br>-->
+            <h3>
+                <hr>
+                <p><b>Адрес выполнения задания</b></p>
+            </h3>
+            <!--todo на будущее когда будет несколько городов-->
+            <!--<p><b>Город</b></p> <select name="" id="city-select" class="form-control" style="width: 35%">-->
+            <!--<option>Самара</option>-->
+            <!--<option>Тольятти</option>-->
+            <!--</select>-->
+            <br>
+            <p><b>Адрес</b></p> <input disabled id="address-input" type="text" class="form-control"
+                                       placeholder="Например:ул.Ново-Садовая д.205 кв 7" autofocus=""
+                                       style="width: 35%" value=""> <br>
+            <h2>
+                <hr>
+                <p><b>Дата выполнения задания</b></p>
+            </h2>
+            <br>
+            <div>
+                <div class="child1">
+                    <b>Начать</b>
+                    <input type="text" id="initial-date">
+                </div>
+                <div class="child1">
+                    <b>Завершить</b>
+                    <input type="text" id="complete-date">
+                </div>
+                <br><br><br><br>
+                <hr>
+                <h2><p><b>Оплата</b></p></h2>
+                <br></div>
+            <br>
+            <!-- ползунок  -->
+            <div></div>
+            <p><b>На какой бюджет вы рассчитываете?</b></p><br>
+            <!--<label for="range">-->
+            <input disabled required name="range" id="range" min="0" max="300" step="5" value="175"/>
+            <label>руб</label>
+            <!--</label>-->
+            <!--<output for="range" class="output"></output>-->
+            <!-- ползунок -->
+
+
+            <hr>
+
+            <h2>
+                <p><b>Контактные данные</b></p>
+            </h2>
+            <br>
+
+            <p><b>Ваше Имя</b></p>
+            <input disabled required id="customer-name" type="text" class="form-control" placeholder="Например: Иван"
+                   autofocus=""
+                   style="width: 50%"> <br>
+
+
+            <p><b>Укажите ваш номер телефона</b></p>
+            <input disabled required id="customer-phone" type="text" class="form-control"
+                   placeholder="Например: +7 999 626 22 33"
+                   autofocus="" style="width: 50%">
+            <br><br><br>
+            <div onclick="offerMyself()" onsubmit="offerMyself()" id="submit" style=" text-align: center;">
+                <a href="#" class="btn-blue" alignt="center">Предложить свои услуги</a><br><br><br>
+            </div>
+
+
+            <script src="js/cookies.js"></script>
+            <script src="js/validation.js"></script>
+            <script>
+                window.onload = function () {
+                    loadTaskAnd(showTask);
+                };
+
+            </script>
+
+            <script src="node_modules/pikaday/pikaday.js"></script>
+            <script>
+                var initialDate = getRuDatePickerById('initial-date');
+                var completeDate = getRuDatePickerById('complete-date')
+            </script>
+
+            <script type="text/javascript">
+
+                function updateTask() {
+                    console.log("Обновление задачи");
+                    var name = $("#task-description").val();
+                    var categoryName = $("#category-select").val();
+                    var descriptionText = $("#task-description-full").val();
+                    var priceText = $("#range").val();
+                    var addressText = $("#address-input").val();
+                    var customerName = $("#customer-name").val();
+                    var customerPhone = $("#customer-phone").val();
+                    var startDate = $("#initial-date").val();
+                    var endDate = $("#complete-date").val();
+                    var sessionId = getCookie("session-id");
+                    var taskId = getCookie("task-id");
+                    var fields = [name, descriptionText, priceText, customerName, customerPhone];
+                    if (!isValidForm(fields)) {
+                        alert("Заполните обязательные поля");
+                        throw new Error();
+                    }
+
+                    var url = getBaseBackEndUrl() + "/task?" + $.param({sessionId: sessionId});
+                    fetch(url, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            id: taskId,
+                            stringId: taskId.toString(),
+                            name: name.toString(),
+                            description: descriptionText.toString(),
+                            priceAmount: parseFloat(priceText),
+                            category: {
+                                name: categoryName.toString()
+                            },
+                            address: addressText.toString(),
+                            startDate: startDate.toString(),
+                            endDate: endDate.toString(),
+                            person: {
+                                firstName: customerName.toString(),
+                                phone: customerPhone.toString()
+                            }
+
+                        })
+                    }).then(function (data) {
+                        checkStatusCodeAndRedirectToLoginPage(data);
+                        window.location = getAllTasksUrl();
+                    }).catch(function (error) {
+                        console.log('request failed', error)
+                    })
+                }
+            </script>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- end Price section -->
+<footer id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="footer-content">
+                <div class="wow animated fadeInDown">
+                    <p>Напиши свою почту и получи скидку!</p>
+                </div>
+                <form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+                    <div class="input-field">
+                        <input type="email" class="subscribe form-control" placeholder="Введи свой Email...">
+                        <button type="submit" class="submit-icon">
+                            <i class="fa fa-paper-plane fa-lg"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="footer-social">
+                    <ul>
+                        <li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i
+                                class="fa fa-twitter fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i
+                                class="fa fa-skype fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i
+                                class="fa fa-dribbble fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i
+                                class="fa fa-youtube fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Essential jQuery Plugins
+================================================== -->
+<!-- Main jQuery -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Twitter Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Single Page Nav -->
+<script src="js/jquery.singlePageNav.min.js"></script>
+<!-- jquery.fancybox.pack -->
+<script src="js/jquery.fancybox.pack.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- jquery easing -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Fullscreen slider -->
+<script src="js/jquery.slitslider.js"></script>
+<script src="js/jquery.ba-cond.min.js"></script>
+<!-- onscroll animation -->
+<script src="js/wow.min.js"></script>
+<!-- Custom Functions -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

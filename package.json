@@ -1,0 +1,36 @@
+{
+  "name": "front-rep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "core-util-is": "^1.0.2",
+    "express": "^4.16.2",
+    "inherits": "^2.0.3",
+    "isarray": "^1.0.0",
+    "jsrender": "^0.9.88",
+    "pikaday": "^1.7.0",
+    "process-nextick-args": "^1.0.7",
+    "readable-stream": "^2.3.3",
+    "safe-buffer": "^5.1.1",
+    "string_decoder": "^1.0.3",
+    "sys": "latest",
+    "through2": "^2.0.3",
+    "util-deprecate": "^1.0.2",
+    "whatwg-fetch": "^2.0.3",
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nsalomatin@bitbucket.org/yourdreamservice/front-rep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/yourdreamservice/front-rep#readme"
+}
