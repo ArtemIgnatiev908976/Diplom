@@ -3,7 +3,7 @@ function getBaseBackEndUrl() {
 }
 
 function getBaseFrontEndUrl() {
-    return "https://arcane-waters-26008.herokuapp.com";
+    return "https://artemignatiev908976.github.io";
 }
 
 function getLoginPageUrl() {
