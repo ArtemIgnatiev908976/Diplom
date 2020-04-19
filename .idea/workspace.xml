@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd88526b-6544-4d88-98b0-194cb860c237" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/frontMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/frontMain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,8 @@
       <workItem from="1575201313952" duration="3783000" />
       <workItem from="1585818217288" duration="789000" />
       <workItem from="1587294711026" duration="1727000" />
-      <workItem from="1587303467672" duration="1790000" />
+      <workItem from="1587303467672" duration="2909000" />
+      <workItem from="1587307908972" duration="11000" />
     </task>
     <servers />
   </component>
@@ -47,10 +49,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587296440761">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587307180452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587296440761" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587307180452" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

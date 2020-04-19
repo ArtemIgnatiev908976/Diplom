@@ -1,9 +1,9 @@
 function getBaseBackEndUrl() {
-    return "https://obscure-chamber-41799.herokuapp.com";
+    return "https://back12345.herokuapp.com/";
 }
 
 function getBaseFrontEndUrl() {
-    return "https://artemignatiev908976.github.io";
+    return "https://artemignatiev908976.github.io/diplomTest";
 }
 
 function getLoginPageUrl() {
